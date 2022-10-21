@@ -5,11 +5,13 @@ const display = document.getElementById('counter-display');
 
 startBtn.addEventListener('click', function () {
     timerStatus = true;
+    startBtn.disabled = true;
     startStopwatch();
 });
 
 stopBtn.addEventListener('click', function () {
     timerStatus = false;
+    startBtn.disabled = false;
     
 });
 
