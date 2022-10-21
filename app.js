@@ -22,8 +22,8 @@ resetBtn.addEventListener('click', function () {
 
 let timerStatus = false;
 let hours = 0;
-let minutes = 59;
-let seconds = 55;
+let minutes = 0;
+let seconds = 0;
 
 function startStopwatch() {
     //first check if timer is enabled, otherwise stop the function
@@ -49,7 +49,7 @@ function startStopwatch() {
 }
 
 function formatNumber(numberInput) {
-    return numberInput.toLocaleString('en-US', {minimumIntegerDigits: 2})
+    return numberInput.toLocaleString('en-GB', {minimumIntegerDigits: 2})
 }
 
 function updateDisplay(){
